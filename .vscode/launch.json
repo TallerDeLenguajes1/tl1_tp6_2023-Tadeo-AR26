@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/net7.0/practico6.dll",
+            "program": "${workspaceFolder}/practico6/bin/Debug/net7.0/practico6.dll",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/practico6",
             "console": "integratedTerminal",
             "stopAtEntry": false
         },

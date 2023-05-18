@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\practico6\\practico6.csproj",
+      "projectUniqueName": "C:\\Taller\\practico6\\practico6.csproj",
       "projectName": "practico6",
-      "projectPath": "C:\\Users\\Alumno\\practico6\\practico6.csproj",
+      "projectPath": "C:\\Taller\\practico6\\practico6.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alumno\\practico6\\obj\\",
+      "outputPath": "C:\\Taller\\practico6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
