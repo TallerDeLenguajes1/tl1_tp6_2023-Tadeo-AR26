@@ -35,13 +35,20 @@ Console.WriteLine("El numero invertido es: "+NumeroInvertido);
 
 string? operacion = "";
 int a = 0, b = 0;
-float resultado;
+float resultado, c = 0;
+double resultadoDouble;
 do{
     Console.WriteLine("Ingrese la operacion que desea realizar");
     Console.WriteLine("Suma: +");
     Console.WriteLine("Resta: -");
     Console.WriteLine("Multiplicacion: *");
     Console.WriteLine("Division: /");
+    Console.WriteLine("Valor Absoluto: abs");
+    Console.WriteLine("Cuadrado: cuadrado");
+    Console.WriteLine("Raiz cuadrada: sqrt");
+    Console.WriteLine("Seno: sen");
+    Console.WriteLine("Coseno: cos");
+    Console.WriteLine("Parte entera: int");
     operacion = Console.ReadLine();
     switch(operacion)
     {
@@ -72,6 +79,47 @@ do{
         control2 = int.TryParse(Console.ReadLine(), out b);
         resultado = a/b;
         Console.WriteLine(resultado);
+        break;
+    case "abs":
+        Console.WriteLine("Ingrese el numero para determinar su Valor Absoluto");
+        control = int.TryParse(Console.ReadLine(), out a);
+        if(a > 0){
+            Console.WriteLine("El valor absoluto es "+a);
+        }
+        else{
+            resultado = -(a);
+            Console.WriteLine("El valor absoluto es "+resultado);
+        }
+        break;
+    case "cuadrado":
+        Console.WriteLine("Ingrese un numero para calcular su cuadrado");
+        control = int.TryParse(Console.ReadLine(), out a);
+        resultado = a*a;
+        Console.WriteLine(resultado);
+        break;
+    case "sqrt":
+        Console.WriteLine("Ingrese un numero para calcular su raiz cuadrada");
+        control = int.TryParse(Console.ReadLine(), out a);
+        resultadoDouble = Math.Sqrt(a);
+        Console.WriteLine(resultadoDouble);
+        break;
+    case "sen":
+        Console.WriteLine("Ingrese un numero para determinar el seno");
+        control = float.TryParse(Console.ReadLine(), out c);
+        resultadoDouble = Math.Sin(c);
+        Console.WriteLine(resultadoDouble);
+        break;
+    case "cos":
+        Console.WriteLine("Ingrese un numero para determinar el coseno");
+        control = float.TryParse(Console.ReadLine(), out c);
+        resultadoDouble = Math.Cos(c);
+        Console.WriteLine(resultadoDouble);
+        break;
+    case "int":
+        Console.WriteLine("Ingrese un numero float para determinar su parte entera");
+        control = float.TryParse(Console.ReadLine(), out c);
+        resultadoDouble = Math.Truncate(c);
+        Console.WriteLine(resultadoDouble);
         break;
     }
     Console.WriteLine("Ingrese y si desea finalizar las operaciones");
