@@ -125,3 +125,17 @@ do{
     Console.WriteLine("Ingrese y si desea finalizar las operaciones");
     operacion = Console.ReadLine();
 }while(operacion != "y");
+
+bool ent, ent2;
+Console.WriteLine("Ingrese dos numeros para determinar el máximo y el minimo entre ambos");
+ent = int.TryParse(Console.ReadLine(), out a);
+ent2 = int.TryParse(Console.ReadLine(), out b);
+
+if(a > b){
+    Console.WriteLine("El máximo entre ambos numeros es "+a);
+    Console.WriteLine("El minimo entre ambos numeros es "+b);
+}
+else{
+    Console.WriteLine("El máximo entre ambos numeros es "+b);
+    Console.WriteLine("El minimo entre ambos numeros es "+a);
+}
